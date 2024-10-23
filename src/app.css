@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 214, 219, 220;
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+@font-face {
+    font-family: 'The Sims Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('The Sims Sans Bold'), url('fonts/thesimssansbold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'The Sims Sans SC Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('The Sims Sans SC Bold'), url('fonts/thesimssansboldsc.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sims LLHP';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sims LLHP'), url('fonts/SimsLLHP.woff') format('woff');
+}
+
+body {
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+}
